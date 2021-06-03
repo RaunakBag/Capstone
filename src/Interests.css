@@ -1,0 +1,29 @@
+.interests{
+    background-color: #fffaf0;
+}
+.interests > h1{
+    margin-left: 50px;
+    font-size: 25px;
+    font-family:'American Typewriter, serif';
+    color: #d2691e
+}
+.interests__headers{
+    margin-left: 70px
+}
+.interest__header  {
+    margin-top: 8px;
+    margin-right: 50px;
+    display: inline-block;
+    justify-content: space-evenly;
+
+    font-size: 20px;
+    font-family:'New Century Schoolbook, TeX Gyre Schola, serif';
+}
+.interest__button{
+    width: 80px;
+    height: 25px;
+    background: rgb(213, 219, 213);
+    border: 0px;
+    border-radius: 8px;
+    font-size:20px;
+}
