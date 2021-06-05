@@ -1,11 +1,11 @@
 import './App.css';
 import Footer from './Footer';
-import Intrests from './Interests'
+import Interests from './Interests'
 
 function App() {
   return (
     <div className="app">
-       <Intrests/>
+       <Interests/>
        <Footer/>
     </div>
   );
