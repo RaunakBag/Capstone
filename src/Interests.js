@@ -1,24 +1,30 @@
-import React from "react";
+import React from 'react';
+import { Tabs } from 'antd';
 
-import Sports from "./Sports";
+function Interests() {
+    const { TabPane } = Tabs;
 
-
-
-import { Tabs, Tab } from "react-bootstrap";
-
-
-export default function App() {
-  const [selectedPlanet, setSelectedPlanet] = React.useState([]);
-  return (
-    <div className="App">
-      <Tabs defaultActiveKey="planet" id="uncontrolled-tab-example">
-        <Tab eventKey="planet" title="Planets">
-          <Sports updatePlanets={e => setSelectedPlanet([...e])} />
-        </Tab>
-        <Tab eventKey="list" title="Selected">
-          
-        </Tab>
-      </Tabs>
-    </div>
-  );
+    function callback(key) {
+        console.log(key);
+    }
+    return (
+        <div className="interests">
+            <Tabs onChange={callback} type="card">
+                <TabPane tab="Tab 1" key="1">
+                         Content of Tab Pane 1
+                </TabPane>
+                <TabPane tab="Tab 2" key="2">
+                        Content of Tab Pane 2
+                </TabPane>
+                <TabPane tab="Tab 3" key="3">
+                         Content of Tab Pane 3
+                </TabPane>
+                <TabPane tab="Tab 4" key="4">
+                        Content of Tab Pane 4
+                 </TabPane>
+            </Tabs>
+        </div>
+    )
 }
+
+export default Interests
