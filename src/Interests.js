@@ -1,5 +1,13 @@
 import React from 'react';
 import { Tabs } from 'antd';
+import Sports from "./Sports"
+import Music from "./Music"
+import Dance from "./Dance"
+import Photography from './Photography';
+import Fitness from "./Fitness"
+import Travel from "./Travel"
+import "./Interests.css"
+
 
 function Interests() {
     const { TabPane } = Tabs;
@@ -9,18 +17,25 @@ function Interests() {
     }
     return (
         <div className="interests">
+            <h1>Search by Interest</h1>
             <Tabs onChange={callback} type="card">
-                <TabPane tab="Tab 1" key="1">
-                         Content of Tab Pane 1
+                <TabPane tab="Sports" key="1">
+                         <Sports/>
                 </TabPane>
-                <TabPane tab="Tab 2" key="2">
-                        Content of Tab Pane 2
+                <TabPane tab="Music" key="2">
+                        <Music/>
                 </TabPane>
-                <TabPane tab="Tab 3" key="3">
-                         Content of Tab Pane 3
+                <TabPane tab="Dance" key="3">
+                         <Dance/>
                 </TabPane>
-                <TabPane tab="Tab 4" key="4">
-                        Content of Tab Pane 4
+                <TabPane tab="Photography" key="4">
+                        <Photography/>
+                 </TabPane>
+                 <TabPane tab="Fitness" key="5">
+                        <Fitness/>
+                 </TabPane>
+                 <TabPane tab="Travel" key="6">
+                       <Travel/>
                  </TabPane>
             </Tabs>
         </div>

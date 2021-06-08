@@ -2,3 +2,6 @@ li{
     display: flex;
     justify-content: flex-start;
 }
+ol{
+    margin-bottom: 10px;
+}
