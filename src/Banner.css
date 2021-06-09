@@ -1,7 +1,6 @@
-.sliderimg{
+.image{
   width: 1300px;
   height: 500px;
-  object-fit: fill;
   border-radius: 10px;
   margin: 30px;
 }
