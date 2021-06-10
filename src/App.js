@@ -1,16 +1,17 @@
 import './App.css';
-import Footer from './Footer';
-import Interests from './Interests'
-import Banner from './Banner';
-import Experiences from "./Experiences"
+import { Route, Switch} from 'react-router-dom'
+import OnlineExp from './OnlineExp'
+import OfflineExp from './OfflineExp'
+import Home from './Home'
 
 function App() {
   return (
     <div className="app">
-       <Banner/>
-       <Interests/>
-       <Experiences/>
-       <Footer/>
+       <Switch>
+       <Route  exact path="/OnlineExp" component={OnlineExp}/>
+       <Route  exact path="/OfflineExp" component={OfflineExp}/>
+       <Route  exact path="/" component={Home}/>
+       </Switch>
     </div>
   );
 }

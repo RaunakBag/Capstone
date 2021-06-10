@@ -15,7 +15,7 @@
 .footer__right{
     margin-right: 50px;
 }
-h1{
+.footer__left__heading1 h1{
     font-size : 20px;
     color: #008b8b;
     font-family: Georgia, serif;

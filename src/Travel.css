@@ -1,7 +1,7 @@
-li{
+.travel {
     display: flex;
-    justify-content: flex-start;
-}
-ol{
-    margin-bottom: 10px;
-}
+  }
+
+  .travel__items {
+    flex: 1 1 auto;
+  }
