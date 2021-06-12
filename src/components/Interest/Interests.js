@@ -7,12 +7,13 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import './Interests.css'
-import Sports from './Sports'
-import Music from './Music'
-import Dance from './Dance'
-import Travel from './Travel'
-import Fitness from './Fitness'
-import Photography from './Photography'
+import Sports from './Sports/Sports'
+import Music from './Music/Music'
+import Dance from './Dance/Dance'
+import Travel from './Travel/Travel'
+import Fitness from './Fitness/Fitness'
+import Photography from './Photography/Photography'
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;

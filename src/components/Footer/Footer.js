@@ -23,7 +23,7 @@ function Footer() {
             </div>
             </div>
             <div className="footer__center">
-            <div className="footer__center__heading">
+            <div className="footer__left__heading1">
                     <h1>Quick Links</h1>
                          <div className="footer__center__topics">
                             <p>Blog</p>

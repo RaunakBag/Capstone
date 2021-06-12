@@ -1,8 +1,10 @@
 import './App.css';
 import { Route, Switch} from 'react-router-dom'
-import OnlineExp from './OnlineExp'
-import OfflineExp from './OfflineExp'
-import Home from './Home'
+import Home from './components/Home/Home';
+import OnlineExp from './components/Experience/OnlineExp/OnlineExp';
+import OfflineExp from './components/Experience/OfflineExp/OfflineExp';
+
+
 
 function App() {
   return (
