@@ -4,6 +4,7 @@ import Interests from './../Interest/Interests'
 import Footer from './../Footer/Footer'
 import Experiences from './../Experience/Experiences';
 import Checkout from './../Checkout/Checkout';
+import Hostels from './../Hostels/Hostels';
 
 
 
@@ -13,6 +14,7 @@ function Home() {
             <Banner/>
             <Interests/>
             <Experiences/>
+            <Hostels/>
             <Checkout/>
             <Footer/>
             </div>

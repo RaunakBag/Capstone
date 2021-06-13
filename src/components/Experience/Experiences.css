@@ -4,8 +4,15 @@
 .experiences__cards{
     display: flex;
     flex-wrap: nowrap;
+    transition: transform 100ms ease-in;
 }
-img{
+.online__experiences :hover {
+    transform: scale(1.07);
+}
+.offline__experiences :hover {
+    transform: scale(1.07);
+}
+.pic{
     width: 610px;
     height: 400px;
     border-radius: 20px;
