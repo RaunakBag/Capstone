@@ -1,30 +1,61 @@
-import React from 'react'
-import './Header.css'
-import SearchIcon from '@material-ui/icons/Search';
-import LanguageIcon from '@material-ui/icons/Language';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { Avatar } from '@material-ui/core';
+import React from "react";
+import "./Header.css";
+import SearchIcon from "@material-ui/icons/Search";
+// import LanguageIcon from '@material-ui/icons/Language';
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+// import { Avatar } from '@material-ui/core';
+import { Link } from "react-router-dom";
+import { useStateValue } from "./StateProvider";
+import { auth } from "./Firebase";
 
 function Header() {
-    return (
-        <div className='header'>
-            <img
-                    className="header__icon"
-                    src="https://i.pinimg.com/originals/3c/bf/be/3cbfbe148597341fa56f2f87ade90956.png"
-                    alt=""
-                />
-            <div className='header__center'>
-                <input type="text" />
-                <SearchIcon />
-            </div>
-            <div className='header__right'>
-                <p>Become a host</p>
-                <LanguageIcon />
-                <ExpandMoreIcon />
-                <Avatar />
-            </div>
-        </div>
-    )
+  const [{ user }, dispatch] = useStateValue();
+
+  const handleAuthenticaton = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
+
+  return (
+    <div className="header">
+      <Link to="/">
+        <img
+          className="header__icon"
+          src="https://cdn.dribbble.com/users/18903/screenshots/4417374/truenorth-logo_2x.png"
+          alt=""
+        />
+      </Link>
+
+      <div className="header__center">
+        <input type="text" />
+        <SearchIcon />
+      </div>
+      <div className="header__right">
+        <Link to="/admin" className="header__links">
+          <div className="header__option">
+            <span className="header__one">Hosting?</span>
+            <span className="header__two">Admin</span>
+          </div>
+        </Link>
+
+        {/* <LanguageIcon /> */}
+
+        {/* <Avatar /> */}
+
+        <Link to={!user && "/login"} className="header__links">
+          <div onClick={handleAuthenticaton} className="header__option">
+            <span className="header__one">
+              Hello {!user ? "Guest" : user.email}
+            </span>
+            <span className="header__two">{user ? "Sign Out" : "Sign In"}</span>
+          </div>
+        </Link>
+
+        <ExpandMoreIcon />
+      </div>
+    </div>
+  );
 }
 
-export default Header
+export default Header;
