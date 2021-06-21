@@ -3,19 +3,21 @@ import Banner from './../Banner/Banner';
 import Interests from './../Interest/Interests'
 import Footer from './../Footer/Footer'
 import Experiences from './../Experience/Experiences';
-import Checkout from './../Checkout/Checkout';
-import Hostels from './../Hostels/Hostels';
+import Location from './../Location/Location';
+import Trial from './../Trial/Trial';
+
+
 
 
 
 function Home() {
     return (
         <div className='home'>
-            <Banner/>
+            <Trial/>
             <Interests/>
+            <Banner/>
+            <Location/>
             <Experiences/>
-            <Hostels/>
-            <Checkout/>
             <Footer/>
             </div>
     )

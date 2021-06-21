@@ -50,7 +50,6 @@ function a11yProps(index) {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    margin: 50 , 
     flexGrow: 1,
     backgroundColor: theme.palette.background.grey,
   },
@@ -66,7 +65,6 @@ export default function TabsWrappedLabel() {
 
   return (
     <div className={classes.root}>
-     <h1> Search by Interest</h1>
       <AppBar position="relative">
         <Tabs value={value} onChange={handleChange} aria-label="wrapped label tabs example">
           <Tab

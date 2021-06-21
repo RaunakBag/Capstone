@@ -1,5 +1,6 @@
 .travel {
     display: flex;
+    column-count: 5;
   }
 
   .travel__items {

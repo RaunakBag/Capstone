@@ -1,9 +1,8 @@
 .sports {
-    display: flex;
+    /* display: flex; */
+    column-count: 5;
   }
-
   .sports__items {
     flex: 1 1 auto;
   }
-
 

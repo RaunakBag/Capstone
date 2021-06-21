@@ -1,9 +1,10 @@
 import React from 'react'
+import Hostels from './../../Hostels/Hostels';
 
 function HostelList() {
     return (
         <div>
-            HostelList
+            <Hostels/>
         </div>
     )
 }

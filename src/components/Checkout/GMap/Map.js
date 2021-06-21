@@ -12,7 +12,7 @@ import {
 
 const style = {
   height: "70vh",
-  width: "70vh"
+  width: "100%"
 };
 
 // The places I want to create markers for.

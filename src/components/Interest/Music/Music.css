@@ -1,5 +1,6 @@
 .music {
-    display: flex;
+    /* display: flex; */
+    column-count: 5;
   }
 
   .music__types {

@@ -1,5 +1,6 @@
 .dance {
-    display: flex;
+    /* display: flex; */
+    column-count: 4;
   }
 
   .dance__items {
