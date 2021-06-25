@@ -4,7 +4,7 @@ import "./TrialCard.css";
 
 function TrialCard() {
   return (
-    <div className="card">
+    <div className="trial">
     <div className="trialcard">
       <img
         src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/232170506.jpg?k=289df3071803a2a7374b34c9fb956b6d8884ecf9c6d17ddf8c597bbc1cbdfaa3&o="

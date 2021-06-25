@@ -1,13 +1,13 @@
-.menu__area{
+.menu__area {
   display: inline-block;
   text-align: center;
   width: 100%;
 }
-.menu__area li:hover{
+.menu__area li:hover {
   background: hsl(0, 0%, 71%);
   border-radius: 5px;
 }
-.menu__area > ul{
+.menu__area > ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -16,7 +16,7 @@
   color: white;
   border-radius: 10px;
 }
-.menu__area > ul > li{
+.menu__area > ul > li {
   position: relative;
   cursor: pointer;
   font-family: poppins;
@@ -30,8 +30,7 @@
 .dropdown {
   display: none;
 }
-.dropdown :hover{
- 
+.dropdown :hover {
 }
 .menu__area li:hover > .dropdown {
   display: table;

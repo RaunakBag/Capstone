@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import Checkbox from "@material-ui/core/Checkbox";
@@ -69,6 +69,7 @@ function StyledCheckbox(props) {
 }
 
 export default function CustomizedCheckbox() {
+  const [ filter, setFilter ] = useState('')
   return (
       <div className="checkbox">
       <div className="checkbox__interests">
@@ -100,7 +101,8 @@ export default function CustomizedCheckbox() {
     </div>
     <div className="checkbox__location">
           <h5>Location</h5>
-      <div className="checkbox__items">
+      <div className="checkbox__items" value={filter} onClick={
+        e => setFilter(e.target.value)}>
         <h>Mumbai</h>
         <StyledCheckbox />
         </div>
@@ -140,6 +142,7 @@ export default function CustomizedCheckbox() {
         <h>Srinagar</h>
         <StyledCheckbox />
         </div>
+        console.log(filter)
     </div>
     </div>
     
