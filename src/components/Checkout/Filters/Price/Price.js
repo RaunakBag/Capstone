@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Slider from '@material-ui/core/Slider';
+import './Price.css'
 
 
 const useStyles = makeStyles({
@@ -20,7 +21,7 @@ export default function ContinuousSlider() {
 
   return (
     <div className={classes.root}>
-       <h5>Price</h5>
+       <h3>Price</h3>
       <Grid container spacing={2}>
         <Grid item>
          500

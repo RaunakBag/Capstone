@@ -12,13 +12,13 @@
   float: left;
 }
 .dropdown-menu {
-  display: none;
+  /* display: none; */
   position: left;
-  min-width: 200px;
+  max-width: 200px;
   z-index: 1;
-  margin-right: 5px;
-  right: 4px;
-  float: left;
+  /* margin-right: 5px; */
+  /* right: 4px;
+  left:auto; */
 }
 .dropdown-menu a {
   color: black;

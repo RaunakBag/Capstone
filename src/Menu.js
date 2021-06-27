@@ -12,12 +12,6 @@ function Menu() {
           </button>
 
           <div class="dropdown-menu">
-            <Link to="#" className="Signup">
-              Signup
-            </Link>
-            <Link to="#" className="Login">
-              Login
-            </Link>
             <Link to="#" className="Hostel">
               Host your Hostel
             </Link>

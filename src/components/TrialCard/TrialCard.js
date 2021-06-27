@@ -221,7 +221,7 @@ function TrialCard() {
       </div>
       <div className="trialcard">
       <img
-        src="https://lh3.googleusercontent.com/proxy/qqf9cRNz0kqLU1M-Tk6AX8ASUvfpsTq-RE4OQlmUx3bOYtZ-ADQKnKAHcPn9OBQRkM791zlKs1vA85hK98vnuoOUaokiazAm38Un_UqdGDK0DjdxQuvKTN7ca_Bw0lcT3TY"
+        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/5d/8e/0f/gala-time-hostel.jpg?w=900&h=-1&s=1"
         alt=""
         class="abc"
       ></img>

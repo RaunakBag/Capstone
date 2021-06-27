@@ -37,7 +37,9 @@ function Header() {
           placeholder="Type to Search..."
         />
       </div>
+
       <div className="header__right">
+      <Menu />
         <Link to="/admin" className="header__links">
           <div className="header__option">
             <span className="header__one">Hosting?</span>
@@ -53,8 +55,6 @@ function Header() {
             <span className="header__two">{user ? "Sign Out" : "Sign In"}</span>
           </div>
         </Link>
-
-        <Menu />
       </div>
     </div>
   );
