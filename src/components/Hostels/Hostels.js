@@ -8,21 +8,30 @@ function Hostels() {
       <div className="hostels__section">
         <Card
           src="https://media.nomadicmatt.com/2019/airbnb_breakup3.jpg"
-          title="3 Bedroom Flat"
+          title="Hostel Cube"
+          user="Amit"
+          location="Kolkata"
           description="Great place for a short stay, host is pretty chill guy and consequently the whole place is pretty chilled out. Clean washrooms and clean rooms, a bargain for its location and hygiene."
-          price="₹10000/night"
+          price="₹1000"
+          rating="4.3"
         />
         <Card
           src="https://thespaces.com/wp-content/uploads/2017/08/Courtesy-of-Airbnb.jpg"
-          title="Penthouse"
+          title="Bliss Hostel"
+          user="Abhay"
+          location="Hyderabad"
           description="Great place for a short stay, host is pretty chill guy and consequently the whole place is pretty chilled out. Clean washrooms and clean rooms, a bargain for its location and hygiene."
-          price="₹25000/night"
+          price="₹2500"
+          rating="3.8"
         />
         <Card
           src="https://media.nomadicmatt.com/2018/apartment.jpg"
-          title="1 Bedroom apartment"
+          title="Kangaroo Hostel"
+          user="Sumit"
+          location="Bangalore"
           description="The location of the room is amazing. It is very near to the bus stop and is in the city center. It has accessibility to some amazing restaurants and places of interest. It even has a co-working space that helps people traveling for business."
-          price="₹6500/night"
+          price="₹6500"
+          rating="4.7"
         />
       </div>
     </div>

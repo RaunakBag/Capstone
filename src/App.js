@@ -1,15 +1,15 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/Home/Home";
-import Header from "./Header";
-import Login from "./Login";
-import Signup from "./Signup";
 import OnlineExp from "./components/Experience/OnlineExp/OnlineExp";
 import OfflineExp from "./components/Experience/OfflineExp/OfflineExp";
 import Checkout from "./components/Checkout/Checkout";
 import { useEffect } from "react";
-import { auth } from "./Firebase";
-import { useStateValue } from "./StateProvider";
+import { auth } from "./components/Header/Firebase";
+import Header from './components/Header/Header';
+import Login from './components/Login/Login';
+import Signup from './components/Signup/Signup';
+import { useStateValue } from './components/Header/StateProvider';
 
 function App() {
   const [{}, dispatch] = useStateValue();

@@ -4,6 +4,8 @@ import { HostelData } from "./HostelData";
 import Dropdown from "./Filter";
 import Price from "./Price/Price";
 import './List.css'
+import Date from './Date'
+
 
 function List() {
   const [locations, setLocations] = useState("");
@@ -36,6 +38,7 @@ function List() {
   return (
     <div className='list1'>
       <div className='list2'>
+      <Date/>
         <Price />
         <Dropdown onLocation={handleLocation} onInterest={handleInterest} />
       </div>

@@ -20,6 +20,8 @@ const Dropdown = ({ onLocation, onInterest }) => (
         <option value="Srinagar">Srinagar</option>
       </select>
 
+      
+
       <label htmlFor="Interest">Interest</label>
       <select name="interest" onChange={onInterest}>
         <option value="All">All</option>

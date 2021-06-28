@@ -1,8 +1,9 @@
 import React from 'react'
 import './OnlineExp.css'
 import Footer from './../../Footer/Footer';
-import Header from './../../../Header';
+
 import Hostels from './../../Hostels/Hostels';
+import Header from './../../Header/Header';
 
 
 function OnlineExp() {
